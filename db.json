@@ -1,0 +1,100 @@
+{
+  u'PubliclyAccessible': True,
+  u'MasterUsername': 'devuser',
+  u'MonitoringInterval': 60,
+  u'LicenseModel': 'general-public-license',
+  u'VpcSecurityGroups': [
+    {
+      u'Status': 'active',
+      u'VpcSecurityGroupId': 'sg-be04a9c5'
+    }
+  ],
+  u'InstanceCreateTime': datetime.datetime(2016,
+  5,
+  24,
+  14,
+  58,
+  57,
+  602000,
+  tzinfo=tzutc()),
+  u'CopyTagsToSnapshot': False,
+  u'OptionGroupMemberships': [
+    {
+      u'Status': 'in-sync',
+      u'OptionGroupName': 'default:mysql-5-6'
+    }
+  ],
+  u'PendingModifiedValues': {
+    
+  },
+  u'Engine': 'mysql',
+  u'MultiAZ': True,
+  u'DBSecurityGroups': [
+    
+  ],
+  u'DBParameterGroups': [
+    {
+      u'DBParameterGroupName': 'custom-mysql56',
+      u'ParameterApplyStatus': 'in-sync'
+    }
+  ],
+  u'AutoMinorVersionUpgrade': True,
+  u'PreferredBackupWindow': '00:00-00:30',
+  u'DBSubnetGroup': {
+    u'Subnets': [
+      {
+        u'SubnetStatus': 'Active',
+        u'SubnetIdentifier': 'subnet-3da0b116',
+        u'SubnetAvailabilityZone': {
+          u'Name': 'us-east-1c'
+        }
+      },
+      {
+        u'SubnetStatus': 'Active',
+        u'SubnetIdentifier': 'subnet-9653b4ce',
+        u'SubnetAvailabilityZone': {
+          u'Name': 'us-east-1a'
+        }
+      },
+      {
+        u'SubnetStatus': 'Active',
+        u'SubnetIdentifier': 'subnet-9753b4cf',
+        u'SubnetAvailabilityZone': {
+          u'Name': 'us-east-1a'
+        }
+      }
+    ],
+    u'DBSubnetGroupName': 'default-vpc-5f1f8f3b',
+    u'VpcId': 'vpc-5f1f8f3b',
+    u'DBSubnetGroupDescription': 'Created from the RDS Management Console',
+    u'SubnetGroupStatus': 'Complete'
+  },
+  u'SecondaryAvailabilityZone': 'us-east-1c',
+  u'ReadReplicaDBInstanceIdentifiers': [
+    
+  ],
+  u'AllocatedStorage': 100,
+  u'DBInstanceArn': 'arn:aws:rds:us-east-1:673381412524:db:dbdevconciliador',
+  u'BackupRetentionPeriod': 0,
+  u'PreferredMaintenanceWindow': 'sat:03:00-sat:03:30',
+  u'Endpoint': {
+    u'HostedZoneId': 'Z2R2ITUGPM61AM',
+    u'Port': 3306,
+    u'Address': 'dbdevconciliador.ctdbpjyjnd1f.us-east-1.rds.amazonaws.com'
+  },
+  u'DBInstanceStatus': 'available',
+  u'EngineVersion': '5.6.27',
+  u'EnhancedMonitoringResourceArn': 'arn:aws:logs:us-east-1:673381412524:log-group:RDSOSMetrics:log-stream:db-BZXTZ6BSRKYJP5DMJCMAGXY5C4',
+  u'AvailabilityZone': 'us-east-1a',
+  u'DomainMemberships': [
+    
+  ],
+  u'MonitoringRoleArn': 'arn:aws:iam::673381412524:role/rds-monitoring-role',
+  u'StorageType': 'standard',
+  u'DbiResourceId': 'db-BZXTZ6BSRKYJP5DMJCMAGXY5C4',
+  u'CACertificateIdentifier': 'rds-ca-2015',
+  u'StorageEncrypted': False,
+  u'DBInstanceClass': 'db.m3.large',
+  u'DbInstancePort': 0,
+  u'DBInstanceIdentifier': 'dbdevconciliador'
+}
