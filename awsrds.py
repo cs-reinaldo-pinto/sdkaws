@@ -12,19 +12,21 @@ client = boto3.client('rds')
 
 #name_db='db-12-02-01-07'#'testore'
 
-
 response =  client.describe_db_instances(DBInstanceIdentifier="dbdevconciliador")
-
 response = response['DBInstances']
 
 db = response[0]
+#db_do_amor = response['DBInstanceIdentifier']
+
+#print(db_do_amor)
+
 print (db)
 
 status = db['DBInstanceStatus']
 print '\n'+(status)
 
 if status == "available":
-    print ''
+    print 'Entrou'
 #    dbname = db['DBInstanceIdentifier']
 #    snapshot = client.create_db_client_snapshot(DBSnapshotIdentifier=dbname,DBInstanceIdentifier='sssdbname')
 else:
