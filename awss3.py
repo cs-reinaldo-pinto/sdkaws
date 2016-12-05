@@ -14,4 +14,3 @@ s3.create_bucket(Bucket=name)
 print (s3.list_objects(Bucket=name))
 
 print (s3.get_bucket_logging(Bucket=name))
-
