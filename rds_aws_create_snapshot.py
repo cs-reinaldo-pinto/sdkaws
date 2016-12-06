@@ -12,7 +12,7 @@ client = boto3.client('rds')
 
 #name_db='db-12-02-01-07'#'testore'
 
-response =  client.describe_db_instances(DBInstanceIdentifier="dbdevconciliador")
+response =  client.describe_db_instances(DBInstanceIdentifier="dbdev")
 response = response['DBInstances']
 
 db = response[0]

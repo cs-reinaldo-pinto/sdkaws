@@ -12,11 +12,11 @@ client = boto3.client('rds')
 
 #name_db='db-12-02-01-07'#'testore'
 
-response =  client.describe_db_instances(DBInstanceIdentifier="dbdevconciliador")
+response =  client.describe_db_instances(DBInstanceIdentifier="dbdev")
 response = response['DBInstances']
 
 
-snapshot = client.describe_db_snapshots(DBInstanceIdentifier="dbdevconciliador",MaxRecords=1)
+snapshot = client.describe_db_snapshots(DBInstanceIdentifier="dbdev",MaxRecords=1)
 
 print (snapshot)
 print "\n"
