@@ -7,8 +7,8 @@ def lambda_handler(event, context):
     client = boto3.client('ec2')
     
     days = -1
-    id_owner='936675601706'
-    volume_id='vol-059954abdae679ec0'
+    id_owner='account'
+    volume_id='vol-id'
     snapshots = client.describe_snapshots(OwnerIds=[id_owner])
     time_now = datetime.now()
     
